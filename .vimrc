@@ -60,7 +60,7 @@ augroup fileTypeIndent
 	autocmd BufNewFile,BufRead *.hs setlocal ts=4 sts=4 sw=4 et
 augroup END
 
-"set guifont=HG?޼??M:h12:cSHIFTJIS:qDRAFT
+set tags=./tags;,tags;
 
 if filereadable("_vimrc-local")
 	source _vimrc-local
