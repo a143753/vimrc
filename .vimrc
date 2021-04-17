@@ -45,7 +45,7 @@ endif
 "End dein Scripts-------------------------
 
 set ambiwidth=double
-
+set belloff=all
 set wildmode=longest,list
 
 augroup noo
