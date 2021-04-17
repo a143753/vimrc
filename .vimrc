@@ -57,7 +57,7 @@ augroup END
 
 augroup fileTypeIndent
 	autocmd!
-	autocmd BufNewFile,BufRead *.hs setlocal ts=4 sts=4 sw=4 et
+	autocmd BufNewFile,BufRead *.hs,*.elm setlocal ts=4 sts=4 sw=4 et
 augroup END
 
 set tags=./tags;,tags;
