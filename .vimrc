@@ -27,6 +27,7 @@ if dein#load_state('~/.vim/dein')
   call dein#add('dag/vim2hs')
   call dein#add('w0rp/ale')
   call dein#add('tpope/vim-commentary')
+  call dein#add('andys8/vim-elm-syntax')
 
   " Required:
   call dein#end()
@@ -36,6 +37,7 @@ endif
 " Required:
 filetype plugin indent on
 syntax enable
+colorscheme industry
 
 " If you want to install not installed plugins on startup.
 if dein#check_install()
