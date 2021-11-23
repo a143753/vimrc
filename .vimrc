@@ -37,8 +37,6 @@ endif
 " Required:
 filetype plugin indent on
 syntax enable
-colorscheme industry
-
 " If you want to install not installed plugins on startup.
 if dein#check_install()
   call dein#install()
@@ -64,6 +62,6 @@ augroup END
 
 set tags=./tags;,tags;
 
-if filereadable("_vimrc-local")
-	source _vimrc-local
+if filereadable(expand("~/_vimrc-local"))
+	source ~/_vimrc-local
 endif
