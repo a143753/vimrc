@@ -23,7 +23,7 @@ if dein#load_state('~/.vim/dein')
   "call dein#add('Shougo/neosnippet.vim')
   "call dein#add('Shougo/neosnippet-snippets')
   call dein#add('vim-airline/vim-airline')
-  call dein#add('scrooloose/nerdtree')
+  call dein#add('preservim/nerdtree')
   call dein#add('dag/vim2hs')
   call dein#add('w0rp/ale')
   call dein#add('tpope/vim-commentary')
@@ -37,6 +37,7 @@ endif
 " Required:
 filetype plugin indent on
 syntax enable
+
 " If you want to install not installed plugins on startup.
 if dein#check_install()
   call dein#install()
