@@ -1,6 +1,6 @@
 set encoding=utf-8
 set fileencoding=utf-8
-set fileencodings=iso-2022-jp,euc-jp,utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=dos,unix,mac
 
 "dein Scripts-----------------------------
@@ -48,6 +48,7 @@ endif
 set ambiwidth=double
 set belloff=all
 set wildmode=longest,list
+set cursorline
 
 augroup noo
 	autocmd!
