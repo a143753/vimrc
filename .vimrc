@@ -28,6 +28,7 @@ if dein#load_state('~/.vim/dein')
   call dein#add('w0rp/ale')
   call dein#add('tpope/vim-commentary')
   call dein#add('andys8/vim-elm-syntax')
+  " language-server-protocol
   call dein#add('prabirshrestha/vim-lsp')
   call dein#add('mattn/vim-lsp-settings')
   call dein#add('mattn/vim-lsp-icons')
@@ -53,6 +54,15 @@ set belloff=all
 set wildmode=longest,list
 set cursorline
 
+" lsp setting
+let g:lsp_diagnostics_enabled = 1
+let g:lsp_diagnostics_echo_cursor = 1
+let g:asyncomplete_auto_popup = 1
+let g:asyncomplete_auto_completeopt = 0
+let g:asyncomplete_popup_delay = 200
+let g:lsb_txt_edit_enable = 1
+
+" tab setting
 augroup noo
 	autocmd!
 	autocmd FileType * setlocal tw=0
@@ -72,10 +82,4 @@ if filereadable(expand("~/_vimrc-local"))
 	source ~/_vimrc-local
 endif
 
-let g:lsp_diagnostics_enabled = 1
-let g:lsp_diagnostics_echo_cursor = 1
-let g:asyncomplete_auto_popup = 1
-let g:asyncomplete_auto_completeopt = 0
-let g:asyncomplete_popup_delay = 200
-let g:lsb_txt_edit_enable = 1
 
