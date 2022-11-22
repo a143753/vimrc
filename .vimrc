@@ -32,6 +32,7 @@ if dein#load_state('~/.vim/dein')
   call dein#add('prabirshrestha/vim-lsp')
   call dein#add('mattn/vim-lsp-settings')
   call dein#add('mattn/vim-lsp-icons')
+  call dein#add('vim-scripts/occur.vim')
 
   " Required:
   call dein#end()
@@ -82,4 +83,6 @@ if filereadable(expand("~/_vimrc-local"))
 	source ~/_vimrc-local
 endif
 
+imap <silent> <C-D><C-D> <C-R>=strftime("%Y-%m-%d")<CR>
+nmap <silent> <C-D><C-D> <ESC>i<C-R>=strftime("%Y-%m-%d")<CR><ESC>
 
